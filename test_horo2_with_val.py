@@ -20,8 +20,8 @@ def accuracy(predictions, labels):
 
 
 batch_size = 100
-layer_ids = ['hidden1', 'hidden2']
-layer_sizes = [784, 500, 400, 300, 200, 100, 10]
+layer_ids = ['hidden1', 'hidden2', 'out']
+layer_sizes = [32, 64, 10]
 
 hvd.init()
 
