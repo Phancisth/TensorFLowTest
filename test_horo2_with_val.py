@@ -26,7 +26,7 @@ layer_sizes = [32, 64, 10]
 hvd.init()
 
 # Inputs and Labels
-train_inputs = tf.placeholder(tf.float32, shape=[None, 784], name='train_inputs')
+train_inputs = tf.placeholder(tf.float32, shape=[None, 32], name='train_inputs')
 train_labels = tf.placeholder(tf.float32, shape=[None], name='train_labels')
 
 # Weight and Bias definitions
